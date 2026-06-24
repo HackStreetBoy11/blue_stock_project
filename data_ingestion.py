@@ -20,9 +20,9 @@ def inspect_datasets(data_dir="data/raw"):
             df = pd.read_csv(path)
             dfs[name] = df
             
-            print(f"\n{"="*40}")
+            print("\n" + "="*40)
             print(f"Dataset: {file}")
-            print(f"{"="*40}")
+            print("="*40)
             print(f"• Shape: {df.shape}")
             print("\n• Data Types:")
             print(df.dtypes)
